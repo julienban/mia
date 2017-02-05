@@ -1,4 +1,3 @@
-
 // GET Youtube Iframe API
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
@@ -62,4 +61,9 @@ function updatePlayersSize(player){
 	makingofDom.style.height = playerHeight+"px";
 }
 
-init();
+$(document).ready(function () {
+  init();
+  $('#fullpage').fullpage({
+    menu: "#menu"
+  });
+});

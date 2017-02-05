@@ -4,59 +4,74 @@
   <meta charset="UTF-8">
   <title>Mia | Le film</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/icomoon.css">
 </head>
 <body>
-  <nav>
+  <nav id="menu">
     <ul>
       <li><a href="#home">Accueil</a></li>
       <li><a href="#video-trailer">Bande Annonce</a></li>
+      <li><a href="#synopsis">Synopsis</a></li>
       <li><a href="#casting">Personnages</a></li>
       <li><a href="#team">L'équipe</a></li>
       <li><a href="#video-makingoff">Les coulisses</a></li>
     </ul>
   </nav>
-  <section id="home">
-    <h1>Mia</h1>
-  </section>
-  <section id="video-trailer" class="video-section">
-    <div>
-      <h2>Trailer</h2>
-      <div id="trailer"></div>
-    </div>
-  </section>
-  <section id="home">
-    <div class="synopsis">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor minus doloribus aliquam repellendus, odit ipsum rem amet, eos quae repellat facere, nisi. Laboriosam rem maxime, aspernatur, nemo numquam sequi sapiente!</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, suscipit eaque? Velit provident quod illum tenetur sint repudiandae cum impedit enim quia veritatis, iure, minima molestias, atque eum doloremque deserunt.</p>
-    </div>
-  </section>
-  <section id="casting">
+  <div class="socials">
     <ul>
-      <li>Mia</li>
-      <li>Le garçon</li>
-      <li>La mère</li>
+      <li><a class="icon-facebook" href="https://www.facebook.com/miamandarine/" target="_blank"></a></li>
+      <li><a class="icon-twitter" href="https://twitter.com/MiaLeFilm" target="_blank"></a></li>
+      <li><a class="icon-instagram" href="https://www.instagram.com/mialefilm/" target="_blank"></a></li>
     </ul>
-  </section>
-  <section id="team">
-    <ul>
-      <li>Adrien</li>
-      <li>Antoine</li>
-      <li>Paul</li>
-      <li>Maggy</li>
-      <li>Julien</li>
-      <li>Clément</li>
-      <li>Weisun</li>
-      <li>Henry</li>
-      <li>Giovanni</li>
-      <li>Valentin</li>
-    </ul>
-  </section>
-  <section id="video-makingof" class="video-section">
-    <div>
-      <h2>Making-of</h2>
-      <div id="makingof"></div>
-    </div>
-  </section>
-  <script type="text/javascript" src="./js/main.js"></script>
+  </div>
+  <div id="fullpage">
+    <section id="home" class="section">
+      <h1>Mia</h1><br>
+      <h2>Le Film</h2>
+      <div class="scroller"><a href="#trailer">Découvrez Mia</a></div>
+    </section>
+    <section id="video-trailer" class="video-section section">
+      <div>
+        <h2>Trailer</h2>
+        <div id="trailer"></div>
+      </div>
+    </section>
+    <section id="synopsis" class="section">
+      <div class="wrapper">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor minus doloribus aliquam repellendus, odit ipsum rem amet, eos quae repellat facere, nisi. Laboriosam rem maxime, aspernatur, nemo numquam sequi sapiente!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, suscipit eaque? Velit provident quod illum tenetur sint repudiandae cum impedit enim quia veritatis, iure, minima molestias, atque eum doloremque deserunt.</p>
+      </div>
+    </section>
+    <section id="casting" class="section">
+      <ul>
+        <li>Mia</li>
+        <li>Le garçon</li>
+        <li>La mère</li>
+      </ul>
+    </section>
+    <section id="team" class="section">
+      <ul>
+        <li>Adrien</li>
+        <li>Antoine</li>
+        <li>Paul</li>
+        <li>Maggy</li>
+        <li>Julien</li>
+        <li>Clément</li>
+        <li>Weisun</li>
+        <li>Henry</li>
+        <li>Giovanni</li>
+        <li>Valentin</li>
+      </ul>
+    </section>
+    <section id="video-makingof" class="video-section section">
+      <div>
+        <h2>Making-of</h2>
+        <div id="makingof"></div>
+      </div>
+    </section>
+  </div>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/jquery.fullPage.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

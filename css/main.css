@@ -7,24 +7,58 @@
 
 body {
   font-family: 'futura';
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
 }
 
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+}
+
+p {
+  line-height: 1.5em;
+  color: #8e8e8e;
 }
 
 a {
-  color: black;
+  color: #8e8e8e;
   text-decoration: none;
   font-family: 'futura'; 
+  transition: all .2s ease-out;
 }
+
+a:hover {
+  color: #a7daed;
+}
+
+#home .fp-tableCell,
+#synopsis .fp-tableCell {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wrapper {
+  margin: 0 20%;
+}
+
+/* Menu */
 
 nav {
   position: fixed;
-  top: 0;
+  top: 10px;
   left: 50%;
   transform: translate3d(-50%, 0, 0);
+  z-index: 1;
 }
 
 nav ul li {
@@ -33,18 +67,12 @@ nav ul li {
 
 nav ul li a {
   padding: 7px 8px 8px;
-  color: #8e8e8e;
   margin: 0 8px;
   line-height: 1;
-  transition: all .2s ease-out;
-}
-
-nav ul li a:hover {
-  color: #a7daed;
 }
 
 /* TRAILER */
-.video-section{
+.video-section .fp-tableCell{
   width: 100%;
   height: 100vh;
   display: flex;
@@ -53,4 +81,28 @@ nav ul li a:hover {
   position: relative;
   margin: 0;
   padding: 0;
+}
+/* Socials */
+.socials {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  z-index: 1;
+}
+
+.socials ul li {
+  margin: 10px 0;
+}
+
+/* Home */
+.scroller {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+}
+
+/* synopsis */
+#synopsis p {
+  font-size: 20px;
 }
