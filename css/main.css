@@ -6,12 +6,19 @@
 }
 
 body {
-  font-family: 'futura'
+  font-family: 'futura';
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
 }
 
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 a {
@@ -20,9 +27,20 @@ a {
   font-family: 'futura'; 
 }
 
+ul li a {
+  color: #8e8e8e;
+  transition: all .2s ease-out;
+}
+
+ul li a:hover {
+  color: #a7daed;
+}
+
+/* Menu */
+
 nav {
   position: fixed;
-  top: 0;
+  top: 10px;
   left: 50%;
   transform: translate3d(-50%, 0, 0);
 }
@@ -33,12 +51,27 @@ nav ul li {
 
 nav ul li a {
   padding: 7px 8px 8px;
-  color: #8e8e8e;
   margin: 0 8px;
   line-height: 1;
-  transition: all .2s ease-out;
 }
 
-nav ul li a:hover {
-  color: #a7daed;
+/* Socials */
+.socials {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+}
+
+.socials ul li {
+  margin: 10px 0;
+}
+
+/* Home */
+#home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
