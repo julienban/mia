@@ -30,18 +30,15 @@ a {
   color: #8e8e8e;
   text-decoration: none;
   font-family: 'futura'; 
-}
-
-ul li a {
   transition: all .2s ease-out;
 }
 
-ul li a:hover {
+a:hover {
   color: #a7daed;
 }
 
-#home,
-#synopsis {
+#home .fp-tableCell,
+#synopsis .fp-tableCell {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -61,6 +58,7 @@ nav {
   top: 10px;
   left: 50%;
   transform: translate3d(-50%, 0, 0);
+  z-index: 1;
 }
 
 nav ul li {
@@ -78,6 +76,7 @@ nav ul li a {
   position: fixed;
   right: 10px;
   top: 10px;
+  z-index: 1;
 }
 
 .socials ul li {
@@ -85,6 +84,12 @@ nav ul li a {
 }
 
 /* Home */
+.scroller {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+}
 
 /* synopsis */
 #synopsis p {
