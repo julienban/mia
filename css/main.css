@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'futura'
+  font-family: 'futura';
 }
 
 ul {
@@ -41,4 +41,16 @@ nav ul li a {
 
 nav ul li a:hover {
   color: #a7daed;
+}
+
+/* TRAILER */
+.video-section{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
