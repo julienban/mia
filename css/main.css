@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'futura';
+  src: url('../fonts/futura/FuturaStd-Medium.otf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: 'futura'
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: 'futura'; 
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 7px 8px 8px;
+  color: #8e8e8e;
+  margin: 0 8px;
+  line-height: 1;
+  transition: all .2s ease-out;
+}
+
+nav ul li a:hover {
+  color: #a7daed;
+}
