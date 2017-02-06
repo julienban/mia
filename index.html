@@ -2,12 +2,21 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mia | Le film</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/icomoon.css">
 </head>
 <body>
   <nav id="menu" class="fade-in">
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
     <ul>
       <li data-menuanchor="home"><a href="#home">Accueil</a></li>
       <li data-menuanchor="video-trailer"><a href="#video-trailer">Bande Annonce</a></li>
@@ -30,41 +39,66 @@
       <h2 class="fade-in-slide-in-up">Le Film</h2>
       <div class="scroller fade-in"><a href="#video-trailer">Découvrez Mia</a></div>
     </section>
-    <section data-anchor="video-trailer" class="video-section section">
-      <div>
+    <section data-anchor="video-trailer" id="trailer-section" class="video-section section">
+      <div class="trailer-wrapper">
         <h2>Trailer</h2>
         <div id="trailer"></div>
       </div>
     </section>
-    <section data-anchor="synopsis" class="section">
+    <section data-anchor="synopsis" id="synopsis-section" class="section">
       <div class="wrapper">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor minus doloribus aliquam repellendus, odit ipsum rem amet, eos quae repellat facere, nisi. Laboriosam rem maxime, aspernatur, nemo numquam sequi sapiente!</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, suscipit eaque? Velit provident quod illum tenetur sint repudiandae cum impedit enim quia veritatis, iure, minima molestias, atque eum doloremque deserunt.</p>
       </div>
     </section>
-    <section data-anchor="casting" class="section">
-      <ul>
-        <li>Mia</li>
-        <li>Le garçon</li>
-        <li>La mère</li>
-      </ul>
+    <section data-anchor="casting" id="casting-section" class="section">
+      <div class="wrapper">
+        <ul>
+          <li>Mia</li>
+          <li>Le garçon</li>
+          <li>La mère</li>
+        </ul>        
+      </div>
     </section>
-    <section data-anchor="team" class="section">
-      <ul>
-        <li>Adrien</li>
-        <li>Antoine</li>
-        <li>Paul</li>
-        <li>Maggy</li>
-        <li>Julien</li>
-        <li>Clément</li>
-        <li>Weisun</li>
-        <li>Henry</li>
-        <li>Giovanni</li>
-        <li>Valentin</li>
-      </ul>
+    <section data-anchor="team" id="team-section" class="section">
+      <div class="wrapper">
+        <ul class="team-list">
+          <li id="adrien">
+            <img src="images/team/julien.jpg" alt="">
+            <p>Adrien</p>
+          </li>
+          <li id="antoine">
+            <img data-src="images/team/julien.jpg" alt="">
+            <p>Antoine</p></li>
+          <li id="paul">
+            <img data-src="images/team/paul.jpg" alt="">
+            <p>Paul</p></li>
+          <li id="maggy">
+            <img data-src="images/team/julien.jpg" alt="">
+            <p>Maggy</p></li>
+          <li id="julien">
+            <img data-src="images/team/julien.jpg" alt="">
+            <p>Julien</p></li>
+          <li id="clement">
+            <img data-src="images/team/julien.jpg" alt="">
+            <p>Clément</p></li>
+          <li id="weisun">
+            <img data-src="images/team/weisun.jpg" alt="">
+            <p>Weisun</p></li>
+          <li id="henry">
+            <img data-src="images/team/julien.jpg" alt="">
+            <p>Henry</p></li>
+          <li id="giovanni">
+            <img data-src="images/team/giovanni.jpg" alt="">
+            <p>Giovanni</p></li>
+          <li id="valentin">
+            <img data-src="images/team/julien.jpg" alt="">
+            <p>Valentin</p></li>
+        </ul>        
+      </div>
     </section>
-    <section data-anchor="video-makingof" class="video-section section">
-      <div>
+    <section data-anchor="video-makingof" id="makingof-section" class="video-section section">
+      <div class="makingof-wrapper">
         <h2>Making-of</h2>
         <div id="makingof"></div>
       </div>

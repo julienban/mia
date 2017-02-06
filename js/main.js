@@ -68,8 +68,44 @@ function updatePlayersSize(player){
 
 $(document).ready(function () {
   init();
+
+  /* Fullpage conf */
   $('#fullpage').fullpage({
     anchors: ['home', 'video-trailer', 'synopsis', 'casting', 'team', 'video-makingof'],
-    menu: "#menu"
+    menu: "#menu",
+    afterLoad: function(anchorLink, index){
+      switch (index) {
+        case 2:
+        $('#trailer-section .trailer-wrapper').addClass('fade-in');
+          break;
+        case 3:
+          $('#synopsis-section .wrapper').addClass('fade-in');
+          break;
+        case 4:
+          $('#casting-section .wrapper').addClass('fade-in');
+          break;
+        case 5:
+          $('#team-section .wrapper').addClass('fade-in');
+          break;
+        case 6:
+          $('#makingof-section .makingof-wrapper').addClass('fade-in');
+          break;
+      }
+    }
   });
+
+  /* Hamburger menu */
+  $('nav .hamburger').click(function () {
+    var self = $(this);
+    self.toggleClass('open');
+    if (self.hasClass('open')) {
+      $('nav ul').fadeIn().css('display', 'flex');
+      $('nav ul li a').click(function () {
+        self.removeClass('open');
+        $('nav ul').fadeOut();
+      })
+    } else {
+      $('nav ul').fadeOut();
+    }
+  })
 });
