@@ -49,7 +49,12 @@ function onPlayerReady(event) {
     //...
 }
 function onPlayerStateChange(event) {
-	//...
+	if (event.data == YT.PlayerState.PLAYING) {
+    console.log(event.target.h)
+    $('#' + event.target.h.id).parents('.video-section').addClass('video-is-playing');
+  } else {
+    $('#' + event.target.h.id).parents('.video-section').removeClass('video-is-playing');
+  }
 }
 
 function updatePlayersSize(player){
@@ -64,6 +69,7 @@ function updatePlayersSize(player){
 $(document).ready(function () {
   init();
   $('#fullpage').fullpage({
+    anchors: ['home', 'video-trailer', 'synopsis', 'casting', 'team', 'video-makingof'],
     menu: "#menu"
   });
 });

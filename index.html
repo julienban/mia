@@ -7,17 +7,17 @@
   <link rel="stylesheet" href="css/icomoon.css">
 </head>
 <body>
-  <nav id="menu">
+  <nav id="menu" class="fade-in">
     <ul>
-      <li><a href="#home">Accueil</a></li>
-      <li><a href="#video-trailer">Bande Annonce</a></li>
-      <li><a href="#synopsis">Synopsis</a></li>
-      <li><a href="#casting">Personnages</a></li>
-      <li><a href="#team">L'équipe</a></li>
-      <li><a href="#video-makingoff">Les coulisses</a></li>
+      <li data-menuanchor="home"><a href="#home">Accueil</a></li>
+      <li data-menuanchor="video-trailer"><a href="#video-trailer">Bande Annonce</a></li>
+      <li data-menuanchor="synopsis"><a href="#synopsis">Synopsis</a></li>
+      <li data-menuanchor="casting"><a href="#casting">Personnages</a></li>
+      <li data-menuanchor="team"><a href="#team">L'équipe</a></li>
+      <li data-menuanchor="video-makingof"><a href="#video-makingof">Les coulisses</a></li>
     </ul>
   </nav>
-  <div class="socials">
+  <div class="socials fade-in">
     <ul>
       <li><a class="icon-facebook" href="https://www.facebook.com/miamandarine/" target="_blank"></a></li>
       <li><a class="icon-twitter" href="https://twitter.com/MiaLeFilm" target="_blank"></a></li>
@@ -25,31 +25,31 @@
     </ul>
   </div>
   <div id="fullpage">
-    <section id="home" class="section">
-      <h1>Mia</h1><br>
-      <h2>Le Film</h2>
-      <div class="scroller"><a href="#trailer">Découvrez Mia</a></div>
+    <section data-anchor="home" class="section">
+      <h1 class="fade-in-slide-in-up">Mia</h1><br>
+      <h2 class="fade-in-slide-in-up">Le Film</h2>
+      <div class="scroller fade-in"><a href="#video-trailer">Découvrez Mia</a></div>
     </section>
-    <section id="video-trailer" class="video-section section">
+    <section data-anchor="video-trailer" class="video-section section">
       <div>
         <h2>Trailer</h2>
         <div id="trailer"></div>
       </div>
     </section>
-    <section id="synopsis" class="section">
+    <section data-anchor="synopsis" class="section">
       <div class="wrapper">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor minus doloribus aliquam repellendus, odit ipsum rem amet, eos quae repellat facere, nisi. Laboriosam rem maxime, aspernatur, nemo numquam sequi sapiente!</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, suscipit eaque? Velit provident quod illum tenetur sint repudiandae cum impedit enim quia veritatis, iure, minima molestias, atque eum doloremque deserunt.</p>
       </div>
     </section>
-    <section id="casting" class="section">
+    <section data-anchor="casting" class="section">
       <ul>
         <li>Mia</li>
         <li>Le garçon</li>
         <li>La mère</li>
       </ul>
     </section>
-    <section id="team" class="section">
+    <section data-anchor="team" class="section">
       <ul>
         <li>Adrien</li>
         <li>Antoine</li>
@@ -63,7 +63,7 @@
         <li>Valentin</li>
       </ul>
     </section>
-    <section id="video-makingof" class="video-section section">
+    <section data-anchor="video-makingof" class="video-section section">
       <div>
         <h2>Making-of</h2>
         <div id="makingof"></div>
