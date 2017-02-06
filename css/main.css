@@ -123,11 +123,11 @@ nav ul li.active a {
 
 /* Animations */
 .fade-in {
-  animation: fadeIn .5s ease-out
+  animation: fadeIn 1s ease-out
 }
 
 .fade-in-slide-in-up {
-  animation: fadeIn .5s ease-out, slideInUp .5s ease-out
+  animation: fadeIn 1s ease-out, slideInUp 1s ease-out
 }
 
 /* Keyframes */
