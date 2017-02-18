@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mia | Le film</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/jquery.fullPage.css">
 </head>
 <body>
   <nav id="menu" class="fade-in">
@@ -18,95 +20,179 @@
       <span></span>
     </div>
     <ul>
-      <li data-menuanchor="home"><a href="#home">Accueil</a></li>
-      <li data-menuanchor="video-trailer"><a href="#video-trailer">Bande Annonce</a></li>
-      <li data-menuanchor="synopsis"><a href="#synopsis">Synopsis</a></li>
+      <li data-menuanchor="story"><a href="#story">Histoire</a></li>
       <li data-menuanchor="casting"><a href="#casting">Personnages</a></li>
+      <li data-menuanchor="home">
+        <a href="#home"><img src="images/logo/logo.png" alt="Logo"></a>
+        <span class="icon-cross"></span>
+      </li>
       <li data-menuanchor="team"><a href="#team">L'équipe</a></li>
-      <li data-menuanchor="video-makingof"><a href="#video-makingof">Les coulisses</a></li>
+      <li data-menuanchor="makingof"><a href="#makingof">Making of</a></li>
     </ul>
   </nav>
   <div class="socials fade-in">
     <ul>
-      <li><a class="icon-facebook" href="https://www.facebook.com/miamandarine/" target="_blank"></a></li>
+      <li><a class="icon-facebook" href="https://www.facebook.com/mialefilm/" target="_blank"></a></li>
       <li><a class="icon-twitter" href="https://twitter.com/MiaLeFilm" target="_blank"></a></li>
       <li><a class="icon-instagram" href="https://www.instagram.com/mialefilm/" target="_blank"></a></li>
-    </ul>
+    </ul>    
+    <p class="copyright"><img src="images/logo/logo_mandarine.svg" alt=""></p>
   </div>
   <div id="fullpage">
-    <section data-anchor="home" class="section">
-      <h1 class="fade-in-slide-in-up">Mia</h1><br>
-      <h2 class="fade-in-slide-in-up">Le Film</h2>
-      <div class="scroller fade-in"><a href="#video-trailer">Découvrez Mia</a></div>
-    </section>
-    <section data-anchor="video-trailer" id="trailer-section" class="video-section section">
-      <div class="trailer-wrapper">
-        <h2>Trailer</h2>
-        <div id="trailer"></div>
+    <section data-anchor="home" id="home-section" class="section fade-in">
+      <img src="images/logo/big_logo_white.png" alt="">
+      <div class="play-buttons">
+        <div id="trailer-button" class="play-button">Trailer</div>
+        <div id="movie-button" class="play-button">Mia</div>
+        <div id="makingof-button" class="play-button">Making Of</div>
+      </div>
+      <div id="trailer-section" class="embed-section">
+        <div class='embed-container'>
+          <iframe id="trailer-iframe" src="https://player.vimeo.com/video/203293987" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+      <div id="movie-section" class="embed-section">
+        <div class='embed-container'>
+          <iframe id="movie-iframe" src="https://player.vimeo.com/video/204166688" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+      <div id="makingof-section" class="embed-section">
+        <div class='embed-container'>
+          <iframe id="makingof-iframe" src="https://player.vimeo.com/video/203293987" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
       </div>
     </section>
-    <section data-anchor="synopsis" id="synopsis-section" class="section">
+    <section data-anchor="story" id="story-section" class="section">
       <div class="wrapper">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor minus doloribus aliquam repellendus, odit ipsum rem amet, eos quae repellat facere, nisi. Laboriosam rem maxime, aspernatur, nemo numquam sequi sapiente!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, suscipit eaque? Velit provident quod illum tenetur sint repudiandae cum impedit enim quia veritatis, iure, minima molestias, atque eum doloremque deserunt.</p>
+        <p>
+          Une androïde dotée d'une intelligence artificielle découvre le monde qui l’entoure à travers les yeux de son ami Victor.
+        </p>
       </div>
     </section>
-    <section data-anchor="casting" id="casting-section" class="section">
-      <div class="wrapper">
-        <ul>
-          <li>Mia</li>
-          <li>Le garçon</li>
-          <li>La mère</li>
-        </ul>        
+    <section data-anchor="casting" id="casting-section" class="section fade-in">
+      <div class="casting-wrapper mia-wrapper">
+        <img src="images/casting/mia.png" class="img-mia" alt="Mia"> 
+        <div class="casting-content mia-content">
+          <div class="casting-header">
+            <div>
+              <p>Nom</p>
+              <p class="upper">Mia</p>
+            </div>
+            <div>
+              <p>Taille</p>
+              <p class="upper">175 cm</p>
+            </div>
+          </div>
+          <div class="casting-text">
+            <p>Mia, alias MIA 5067, est une IA ménagère prête à ranger tout le bazar de vos enfants.</p>
+          </div>
+        </div>        
+      </div>
+      <div class="casting-wrapper">
+        <img src="images/casting/victor.png" class="img-victor" alt="Victor">     
+        <div class="casting-content victor-content">
+          <div class="casting-header">
+            <div>
+              <p>Nom</p>
+              <p class="upper">Victor</p>
+            </div>
+            <div>
+              <p>Taille</p>
+              <p class="upper">140 cm</p>
+            </div>
+          </div>
+          <div class="casting-text">
+            <p>Victor vient de perdre son père. Il se raccroche à Mia, l'IA ménagère de sa maison.</p>
+          </div>
+        </div>     
       </div>
     </section>
     <section data-anchor="team" id="team-section" class="section">
-      <div class="wrapper">
+      <div class="slide">
         <ul class="team-list">
           <li id="adrien">
-            <img src="images/team/julien.jpg" alt="">
-            <p>Adrien</p>
+            <img src="images/team/adrien.png" alt="">
+            <p>Adrien Pliot-Lesecq</p>
+            <p>Réalisateur</p>
+          </li>
+          <li id="paul">
+            <img data-src="images/team/paul.png" alt="">
+            <p>Paul Chagnon</p>
+            <p>Monteur</p>
           </li>
           <li id="antoine">
-            <img data-src="images/team/julien.jpg" alt="">
-            <p>Antoine</p></li>
-          <li id="paul">
-            <img data-src="images/team/paul.jpg" alt="">
-            <p>Paul</p></li>
+            <img data-src="images/team/antoine.png" alt="">
+            <p>Antoine Lassoujade</p>
+            <p>Assistant réalisateur</p>
+          </li>
+        </ul>        
+      </div>
+      <div class="slide">
+        <ul class="team-list">
           <li id="maggy">
-            <img data-src="images/team/julien.jpg" alt="">
-            <p>Maggy</p></li>
+            <img data-src="images/team/maggy.png" alt="">
+            <p>Maggy Nicot</p>
+            <p>Accessoiriste / Maquilleuse</p>
+          </li>
           <li id="julien">
-            <img data-src="images/team/julien.jpg" alt="">
-            <p>Julien</p></li>
+            <img data-src="images/team/julien.png" alt="">
+            <p>Julien Bancquart</p>
+            <p>Responsable communication</p>
+          </li>
           <li id="clement">
-            <img data-src="images/team/julien.jpg" alt="">
-            <p>Clément</p></li>
+            <img data-src="images/team/clement.png" alt="">
+            <p>Clément Belliot</p>
+            <p>Making Of / communication</p>
+          </li>
+        </ul>        
+      </div>
+      <div class="slide">
+        <ul class="team-list">
           <li id="weisun">
-            <img data-src="images/team/weisun.jpg" alt="">
-            <p>Weisun</p></li>
+            <img data-src="images/team/weisun.png" alt="">
+            <p>Weisun Chen</p>
+            <p>Cadreur</p>
+          </li>
           <li id="henry">
-            <img data-src="images/team/julien.jpg" alt="">
-            <p>Henry</p></li>
+            <img data-src="images/team/henry.png" alt="">
+            <p>Henry Dufaure de Citres</p>
+            <p>Régisseur / Scripte</p>
+          </li>
           <li id="giovanni">
-            <img data-src="images/team/giovanni.jpg" alt="">
-            <p>Giovanni</p></li>
+            <img data-src="images/team/giovanni.png" alt="">
+            <p>Giovanni Faïna</p>
+            <p>Son</p>
+          </li>
           <li id="valentin">
-            <img data-src="images/team/julien.jpg" alt="">
-            <p>Valentin</p></li>
+            <img data-src="images/team/valentin.png" alt="">
+            <p>Valentin Crochemore</p>
+            <p>Développeur</p>
+          </li>
         </ul>        
       </div>
     </section>
-    <section data-anchor="video-makingof" id="makingof-section" class="video-section section">
-      <div class="makingof-wrapper">
-        <h2>Making-of</h2>
-        <div id="makingof"></div>
-        <p class="copyright">&copy; Mandarine Pictures</p>
+    <section data-anchor="makingof" id="makingof-section" class="video-section section">
+      <div class="slide">
+        <div id="makingof1" class="makingof-img"></div>
+        <div id="makingof2" class="makingof-img"></div>
+      </div>
+      <div class="slide">
+        <div id="makingof3" class="makingof-img"></div>
+        <div id="makingof4" class="makingof-img"></div>
+      </div>
+      <div class="slide">
+        <div id="makingof5" class="makingof-img"></div>
+        <div id="makingof6" class="makingof-img"></div>
+      </div>
+      <div class="slide">
+        <div id="makingof7" class="makingof-img"></div>
+        <div id="makingof8" class="makingof-img"></div>
       </div>
     </section>
   </div>
   <script src="js/jquery-3.1.1.min.js"></script>
   <script src="js/jquery.fullPage.min.js"></script>
+  <script src="https://player.vimeo.com/api/player.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
