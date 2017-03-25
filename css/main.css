@@ -281,25 +281,30 @@ nav ul li a img {
   border-radius: 100%;
   width: 120px;
   height: 120px;
-  display: inline-flex;
+  display: flex;
   -ms-align-items: center;
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  margin: 60px;
+  margin: 60px auto;
   cursor: pointer;
   letter-spacing: 2px;
   transition: all .2s ease-out;
   text-align: center;
 }
 
+.play-button:not(#movie-button) {
+  border: none;
+  border-radius: 0;
+  width: initial;
+  height: initial;
+  margin: 10px;
+  padding: 10px;
+}
+
 .play-button:hover {
   background: white;
   color: #8D9DB0;
-}
-
-#makingof-button {
-  display: none;
 }
 
 /* trailer */
